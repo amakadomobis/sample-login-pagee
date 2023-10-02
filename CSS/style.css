@@ -1,0 +1,269 @@
+body{
+    
+    margin: 0;
+    padding: 0;
+    font-family: League Spartan, Arial;
+  
+}
+
+.covering{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-image: linear-gradient(to right, blueviolet, hsl(258, 91%, 26%));    
+}
+
+
+
+
+.container{
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+    border-radius: 40px;
+    box-shadow: 2px 2px 30px 7px hsl(258, 92%, 41%)
+   
+}
+
+.left-side{
+    
+    height: 500px;
+    flex: 1.5;
+    margin-right: -1px;
+    background-color: rgb(155, 76, 230);
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    padding: 0px 15px;
+    box-sizing: border-box;
+   
+    
+}
+
+.right-side{
+    height: 500px;
+    flex: 1;
+    margin-left: -1px;
+    background-color: white;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px; 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    padding: 10px 40px;
+    box-sizing: border-box;
+}
+
+
+/* right side contents */
+.welcome-back{
+    width: 45%;
+    background-color: rgb(155, 76, 230);
+    position: absolute;
+    top: 10px;
+    left: 0;
+    padding-left: 0px;
+    padding-right: 10px ;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    color: white;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.login{
+    text-align: center;
+    padding-top: 60px;
+}
+
+.login p{
+    font-size: 23px;
+}
+
+.form-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.username{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 220px;
+    height: 40px;
+    padding-right: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;     
+}
+.username::placeholder{
+    /* font-size: 15px;
+    font-weight: bold; */
+    color: rgb(185, 184, 184)
+}
+
+
+.login-btn{
+    background-color: rgb(155, 76, 230);
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-family: roboto;
+    font-size: 17px;
+    font-weight: 300;
+    color: white; 
+}
+
+
+.bottom-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 60px;
+}
+
+.create-account{
+    font-size: 15px;
+    color: rgb(94, 24, 160);
+    text-decoration: none;
+}
+
+.forgot-password{
+    font-size: 15px;
+    color: rgb(94, 24, 160);   
+}
+/* right side content ends here */
+
+
+
+/* left side contents */
+img{
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    border: none;
+    object-fit: cover;   
+}
+
+.paragraph{
+    color: white;
+    text-align: center;
+    font-size: 15px; 
+    padding-top: 30px; 
+    padding-bottom: 0px;       
+}
+/* left side contents ends here */
+
+
+
+@media screen and (max-width: 1090px) {
+    
+
+    .container{
+        width: 700px;       
+    }
+
+    img{
+        width: 250px;
+        height: 250px;
+    }  
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+    .container{
+        width: 500px;        
+    }
+
+}
+
+
+@media screen and (max-width: 690px) {
+    
+    .container{
+        width: 300px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;  
+        align-items: center;    
+    }
+
+    .left-side{
+        width: 100%;
+        height: 200px;
+        margin-bottom: -1px; 
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        display: flex;
+        align-items: center;
+        position: relative; 
+         
+    }
+
+    .right-side{
+        width: 100%;
+        height: 400px;
+        margin-top: -1px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    position: absolute;
+    top: 10px;    
+}
+
+.paragraph{
+    font-size: 9px;
+    position: absolute;
+    bottom: 7px;
+    padding-left: 5px;  
+    padding-right: 5px; 
+}
+
+.login p{
+    font-size: 18px;
+}
+
+
+.bottom-div{
+    gap: 30px;
+}
+
+.welcome-back{
+    font-size: 16px;  
+}
+
+
+}
+
